@@ -22,28 +22,28 @@
     <link rel="icon" href="favicon.png" />
 </head>
 <body>
-    <header class="page-header">
+    <header>
         <div class="container">
             <div class="row">
+                <img class="img-thumbnail pull-left main-pic" src="testpic.jpg" alt="My Portrait" />
                 <div class="profile pull-left">
-                    <img class="img-thumbnail" src="testpic.jpg" alt="My Portrait" />
-                    <h1 class="myname">Michael Morand</h1>
-                    <h2>Software Developer</h2>
+                    <h1 class="myname text-center">Michael Morand</h1>
+                    <h4 class="title text-center">Software Developer</h4>
                     <!--TODO: ADD icons/images for list items-->
-                    <ul class="list-inline button-list">
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="https://www.linkedin.com/in/mike-morand-69541235" role="button"><img src="linkedin_icon.jpg" alt="LinkedIn" /></a>
-                        </li>
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="https://www.github.com/TimeTrx" role="button"><img src="github_icon.jpg" alt="GitHub" /></a>
-                        </li>
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="mailto:michael.morand@mail.com" role="button"><img src="email_icon.jpg" alt="Email" /></a>
-                        </li>
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="Michael_Morand_Resume.pdf" role="button"><img src="resume_icon.jpg" alt="Resume" /></a>
-                        </li>
-                    </ul>
+                    <div class="btn-group social-bar">
+                        <button class="btn-link">
+                            <a class="btn btn-default" href="https://www.linkedin.com/in/mike-morand-69541235"><img src="linkedin.png" alt="LinkedIn" /></a>
+                        </button>
+                        <button type="button" role="button" class="btn-link">
+                            <a class="btn btn-default" href="https://www.github.com/TimeTrx"><img src="github.png" alt="GitHub" /></a>
+                        </button>
+                        <button type="button" role="button" class="btn-link">
+                            <a class="btn btn-default" href="mailto:michael.morand@mail.com"><img src="email.png" alt="Email" /></a>
+                        </button>
+                        <button type="button" role="button" class="btn-link">
+                            <a class="btn btn-default" href="Michael_Morand_Resume.pdf"><img src="pdf.png" alt="Resume" /></a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,6 +109,7 @@
                 <div class="content-info">
                     <!-- TODO: ADD footer info, add script to adjust year on copyright, and copyright glyph?-->
                     <p>Copyright Michael Morand 2016</p>
+                    <div>Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                 </div>
             </div>
         </footer>
