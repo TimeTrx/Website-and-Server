@@ -22,28 +22,89 @@
     <link rel="icon" href="favicon.png" />
 </head>
 <body>
-    <header class="page-header">
+    <div class="row">
+        <div class="visible-lg">
+            <h1>Large lg</h1>
+        </div>
+        <div class="visible-md">
+            <h1>Medium md</h1>
+        </div>
+        <div class="visible-sm">
+            <h1>Small sm</h1>
+        </div>
+        <div class="visible-xs">
+            <h1>XTRA small xs</h1>
+        </div>
+    </div>
+    <header>
         <div class="container">
             <div class="row">
-                <div class="profile pull-left">
-                    <img class="img-thumbnail" src="testpic.jpg" alt="My Portrait" />
-                    <h1 class="myname">Michael Morand</h1>
-                    <h2>Software Developer</h2>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <br>
+                    <img class="img-thumbnail main-pic" src="testpic.jpg" alt="My Portrait" />
+                </div>
+                <div class="profile col-md-8 col-xs-8">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <br class="visible-md visible-lg visible-sm">
+                        <br class="visible-md visible-lg">
+                        <br class="visible-md visible-lg">
+                        <h1 class="myname text-center">Michael Morand</h1>
+                        <h4 class="title text-center">Software Developer</h4>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
                     <!--TODO: ADD icons/images for list items-->
-                    <ul class="list-inline button-list">
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="https://www.linkedin.com/in/mike-morand-69541235" role="button"><img src="linkedin_icon.jpg" alt="LinkedIn" /></a>
-                        </li>
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="https://www.github.com/TimeTrx" role="button"><img src="github_icon.jpg" alt="GitHub" /></a>
-                        </li>
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="mailto:michael.morand@mail.com" role="button"><img src="email_icon.jpg" alt="Email" /></a>
-                        </li>
-                        <li class="btn-block" role="listitem">
-                            <a class="btn btn-default" href="Michael_Morand_Resume.pdf" role="button"><img src="resume_icon.jpg" alt="Resume" /></a>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="visible-sm visible-xs text-center">
+                            <div class="btn-group social-bar">
+                                <div class="col-md-3 col-xs-3">
+                                    <button class="btn-link">
+                                        <a class="btn btn-default" href="https://www.linkedin.com/in/mike-morand-69541235"><img src="linkedin.png" alt="LinkedIn" /></a>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <button type="button" role="button" class="btn-link">
+                                        <a class="btn btn-default" href="https://www.github.com/TimeTrx"><img src="github.png" alt="GitHub" /></a>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <button type="button" role="button" class="btn-link">
+                                        <a class="btn btn-default" href="mailto:michael.morand@mail.com"><img src="email.png" alt="Email" /></a>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <button type="button" role="button" class="btn-link">
+                                        <a class="btn btn-default" href="Michael_Morand_Resume.pdf"><img src="pdf.png" alt="Resume" /></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visible-md visible-lg">
+                            <div class="btn-group social-bar">
+                                <div class="col-md-3 col-xs-3">
+                                    <button class="btn-link">
+                                        <a class="btn btn-default" href="https://www.linkedin.com/in/mike-morand-69541235"><img src="email.png" alt="LinkedIn" /></a>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <button type="button" role="button" class="btn-link">
+                                        <a class="btn btn-default" href="https://www.github.com/TimeTrx"><img src="email.png" alt="GitHub" /></a>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <button type="button" role="button" class="btn-link">
+                                        <a class="btn btn-default" href="mailto:michael.morand@mail.com"><img src="email.png" alt="Email" /></a>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <button type="button" role="button" class="btn-link">
+                                        <a class="btn btn-default" href="Michael_Morand_Resume.pdf"><img src="email.png" alt="Resume" /></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,7 +113,7 @@
         <div class="section-info row">
             <h2 class="summary">Summary</h2>
             <div class="content-info">
-                <p>I am a recent graduate from the University of Windsor, with a degree in Computer Science. I am interested in the theoretical topics of machine learning and crytography. My practical software design experience includes application development, mobile development, and website development. I also enjoy playing sports such as hockey and football.</p>
+                <p>I am a recent graduate from the University of Windsor, with a degree in Computer Science. I am interested in the theoretical topics of machine learning and crytography. My practical software design experience includes application development, mobile development, and website development.</p>
             </div>
         </div>
         <div class="section-info row">
@@ -73,18 +134,20 @@
             <div class="content-info">
                 <div class="div-job comp-sci-jobs">
                     <h2 class="degree-work">Degree Related Work</h2>
-                    <h3>Halight Inc <span>Tecumseh Ontario Summer 2015</span></h3>
+                    <h3>Harvest Fresh Catering <span class="location-and-date">Essex Ontario Present</span></h3>
+                    <p>Working as a Database Administrator. Tasks include maintaining and migrating a legacy database to a new database management system. Other functions tasked with include database troubleshooting, security testing and configuration for end users.</p>
+                    <h3>Halight Inc <span class="location-and-date">Tecumseh Ontario Summer 2015</span></h3>
                     <p>Worked as a Web Software Developer. Tasked with quality assurance, and quality control testing in an agile website development environment. Preformed client and server side testing of eLearning environments. Utilized JIRA for bug tracking and assignment; Confluence for team communication and coordination. Solved technical issues with website development during testing. Developed client side scripts and pages for Halight’s eLearning website.</p>
                 </div>
                 <div class="div-job other-jobs">
                     <h2>Other Work</h2>
-                    <h3>TRQSS <span>Lakeshore Ontario August-October 2016</span></h3>
-                    <p>Manufacture and test seat belt components which include belt pins, locking pins and webbing buttons. Perform final assembly of seat belts which includes web assembly, installing webbed components, button pressing and sewing anchor into finished seat belt. Perform quality checks on individual seat belt components prior to assembly.</p>
-                    <h3> Zehrs Markets <span>Tecumseh Ontario January-July 2016</span></h3>
+                    <h3>TRQSS <span class="location-and-date">Lakeshore Ontario August-October 2016</span></h3>
+                    <p>Manufactured and tested seat belt components which include belt pins, locking pins and webbing buttons. Performed final assembly of seat belts which includes web assembly, installing webbed components, button pressing and sewing anchor into finished seat belt. Performed quality checks on individual seat belt components prior to assembly.</p>
+                    <h3> Zehrs Markets <span class="location-and-date">Tecumseh Ontario January-July 2016</span></h3>
                     <p>Tasked with providing customer service, preparing food and cleaning in a busy supermarket.</p>
-                    <h3>Riverside Rentals <span>Tecumseh Ontario Summer 2010, Summer 2013 & Summer 2014</span></h3>
+                    <h3>Riverside Rentals <span class="location-and-date">Tecumseh Ontario Summer 2010, Summer 2013 & Summer 2014</span></h3>
                     <p>Preformed daily maintenance, inspected and performed repairs on small equipment. Assisted in everyday small engine shop tasks, such as oil changes and air filter changes.</p>
-                    <h3>G&K Services <span>Windsor Ontario Summer 2011 & Summer 2012</span></h3>
+                    <h3>G&K Services <span class="location-and-date">Windsor Ontario Summer 2011 & Summer 2012</span></h3>
                     <p>Rolled floor mats and sorted commercial overalls, gloves and other garments prior to wash cycle assembly line.</p>
                 </div>
              </div>
@@ -93,21 +156,21 @@
             <h2 class="project">Projects</h2>
             <div class="content-info">
                 <div class="div-project">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Resume Website <span class="github-status">Available on Github</span></h3>
+                    <p>This website that you are viewing right now is entirely designed and programmed by myself, including image files.</p>
                 </div>
-            </div>
-        </div>
-        <div class="section-info row">
-            <div class="content-info">
-                <p>PlaceHolder4</p>
+                <div class="div-project">
+                    <h3>C++ Web Request Server</h3>
+                    <p>Designed and programmed a set of scripts for a Linux Machine to function as a web server. When given a HTTP GET or POST Request will check the site request and if valid will serve the web page with the proper HTTP request.</p>
+                </div>
             </div>
         </div>
         <footer class="footer">
             <div class="section-info row">
                 <div class="content-info">
                     <!-- TODO: ADD footer info, add script to adjust year on copyright, and copyright glyph?-->
-                    <p>Copyright Michael Morand 2016</p>
+                    <div>Copyright Michael Morand 2016</div>
+                    <div>Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                 </div>
             </div>
         </footer>
