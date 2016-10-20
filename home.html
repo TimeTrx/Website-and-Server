@@ -12,18 +12,31 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--Local CSS-->
     <link rel="stylesheet" type="text/css" href="global.css">
-    <!-- TODO: Add a script that only allows modern browsers and mobile to work on site-->
     <!-- TODO: Add a script for analytics-->
     <!-- Added a script that prevents web crawlers/search engines from using up all my bandwidth, /Robots.txt-->
-    <!-- Modern Browser Only Script Here-->
     <!--Webpage Title-->
     <title>Michael Morand</title>
     <!--Webpage Icon, Only works on modern browsers-->
     <link rel="icon" href="favicon.png" />
+    <!-- Javascript to adjust year on copyright in the footer.-->
+    <script type="text/javascript">
+        window.onload = function () {
+            //Site created in 2016
+            var startyear = 2016;
+            var checkyear = new Date();
+            var addyear = checkyear.getFullYear();
+            //var addyear = 2020; Debugging and testing only.
+            if(startyear == addyear)
+            {
+                document.getElementById("year").innerHTML = startyear;
+            }
+            else {
+                document.getElementById("year").innerHTML = startyear + "-" + addyear;
+            }
+        }
+    </script>
 </head>
 <body>
-    <!--TODO: Remove bootstrap size testing after all testing is done.-->
-    
     <header>
         <div class="container">
             <div class="row">
@@ -125,6 +138,7 @@
                     <p><span class="glyphicon glyphicon-education" aria-hidden="true"></span> <a class="link-theme" href="http://www.uwindsor.ca/">University of Windsor</a> (2011-2016)</p>
             </div>
         </div>
+        <!--TODO: Remove bootstrap size testing after all testing is done.-->
         <div class="row">
             <div class="visible-lg">
                 <h1>Large lg</h1>
@@ -142,8 +156,8 @@
         <br />
         <footer class="footer">
             <div class="row content-info text-center">
-                <!-- TODO: ADD footer info, add script to adjust year on copyright, and copyright glyph?-->
-                <div><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Michael Morand 2016. Glyphicons made by <a href="http://www.jankovarik.net/" title="Jan Kovarik">Jan Kovarik</a> from <a href="http://www.glyphicons.com/" title="Glyphicons">glyphicons.com</a>. Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
+                <!-- Footer info and copyright glyph. Script for year is in head.-->
+                <div><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Michael Morand <span id="year"></span>. Glyphicons made by <a href="http://www.jankovarik.net/" title="Jan Kovarik">Jan Kovarik</a> from <a href="http://www.glyphicons.com/" title="Glyphicons">glyphicons.com</a>. Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
             </div>
         </footer>
     </div>
