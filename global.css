@@ -1,7 +1,9 @@
 /*All Place Holders Right Now*/
 
-body{
-    background-color: aqua;
+body {
+    background-image: url("Elegant_Background-3.jpg");
+    background-attachment: fixed;
+    /*background-size: cover;*/ 
 }
 	
 .btn{
@@ -23,7 +25,7 @@ header{
 }
 
 .main-pic{
-   
+   width: 100%;
 }
 
 .myname{
@@ -35,7 +37,7 @@ header{
 
 .content-info{ 
     background-color: white;
-    opacity: 0.85;  
+    opacity: 0.8;  
 }
 
 .content-info > p{
@@ -80,24 +82,15 @@ a:focus{
     padding-left: 0.625em;
 }
 
-.div-project{
-
+.text-pad > h3{
+    padding-top: 0.625em;
 }
+.text-padding{
+    padding-top: 0.625em;
+} 
 
-.div-job{
-
-}
-
-.other-jobs{
-
-}
-
-.comp-sci-jobs{
-
-}
-
-.degree-work{
-
+footer{
+    
 }
 
 .location-and-date{
