@@ -128,9 +128,9 @@
             <h2 class="header-info"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Projects</h2>
             <div class="content-info text-pad">
                 <h3 class="info-title"><a class="link-theme" href="https://github.com/TimeTrx/Website-and-Server">Resume Website</a> <span class="location-and-date">Available on Github</span></h3>
-                <p>This website that you are viewing right now is designed and programmed by myself. Made with HTML5 and CSS3 in mind.</p>
+                <div class="row"><div class="col-md-2 col-xs-2"><img class="img-thumbnail project-pic" src="websitepic.png" alt="Website" /></div><div class="col-md-8 col-xs-8"><p>This website is designed and programmed by myself. It showcases my goals, work experience and projects. The website is made with current HTML5 and CSS3 standards.</p></div></div>
                 <h3 class="info-title"><a class="link-theme" href="https://github.com/TimeTrx/University-Work/tree/master/60-340/Final%20Project">C++ Web Request Server</a> <span class="location-and-date">Partially Available on Github</span></h3>
-                <p>Designed and programmed a set of scripts for a Linux Machine to function as a web server. When given a HTTP GET or POST Request will check the site request and if valid will serve the web page with the proper HTTP request.</p>
+                <div class="row"><div class="col-md-2 col-xs-2"><img class="img-thumbnail project-pic bottom-pic" src="cpp-pic.png" alt="Website" /></div><div class="col-md-8 col-xs-8"><p>Designed and programmed a set of scripts for a Linux Machine to function as a web server. When given a HTTP GET or POST Request will check the site request and if valid will serve the web page with the proper HTTP request.</p></div></div>
             </div>
         </div>
         <div class="section-info row">
@@ -141,22 +141,6 @@
                 <p><span class="glyphicon glyphicon-education" aria-hidden="true"></span> <a class="link-theme" href="http://www.uwindsor.ca/">University of Windsor</a> (2011-2016)</p>
             </div>
         </div>
-        <!--TODO: Remove bootstrap size testing after all testing is done.-->
-        <div class="row">
-            <div class="visible-lg">
-                <h1>Large lg</h1>
-            </div>
-            <div class="visible-md">
-                <h1>Medium md</h1>
-            </div>
-            <div class="visible-sm">
-                <h1>Small sm</h1>
-            </div>
-            <div class="visible-xs">
-                <h1>XTRA small xs</h1>
-            </div>
-        </div>
-        <br />
         <footer class="footer">
             <div class="row content-info text-center">
                 <!-- Footer info and copyright glyph. Script for year is in head.-->
@@ -164,6 +148,17 @@
             </div>
         </footer>
     </div>
-    <!-- TODO: Add a script for google analytics-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86013375-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
